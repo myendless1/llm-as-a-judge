@@ -1,0 +1,43 @@
+### model
+model_name_or_path: /vepfs-sha/liying/LLM_JUDGER/Models/chatglm3-6b
+
+### method
+stage: sft
+do_train: true
+finetuning_type: lora
+lora_target: query_key_value
+
+### ddp
+ddp_timeout: 180000000
+
+### dataset
+dataset: train_openai_auto_j
+template: chatml
+cutoff_len: 2048
+max_samples: 10000000
+overwrite_cache: true
+preprocessing_num_workers: 16
+
+### output
+output_dir: saves/chatglm3-6b_judge_auto_j2/lora/sft
+logging_steps: 100
+save_steps: 500
+plot_loss: true
+overwrite_output_dir: true
+
+### train
+per_device_train_batch_size: 1
+gradient_accumulation_steps: 1
+learning_rate: 0.00005
+num_train_epochs: 1
+lr_scheduler_type: cosine
+warmup_steps: 0.1
+fp16: true
+report_to: ["wandb"]
+
+### eval
+val_size: 0.1
+per_device_eval_batch_size: 1
+evaluation_strategy: steps
+eval_steps: 500
+

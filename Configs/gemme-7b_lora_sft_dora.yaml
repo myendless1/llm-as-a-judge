@@ -1,0 +1,43 @@
+### model
+model_name_or_path: /vepfs-sha/liying/LLM_JUDGER/Models/gemma-7b/gemma
+
+### method
+stage: sft
+do_train: true
+finetuning_type: lora
+lora_target: q_proj,v_proj
+dpo_ftx: 1.0
+
+### dataset
+dataset: train_openai
+template: gemma
+cutoff_len: 2048
+max_samples: 10000000
+overwrite_cache: true
+preprocessing_num_workers: 16
+
+### output
+output_dir: saves/gemme-7b/lora/sft
+logging_steps: 10
+save_steps: 500
+plot_loss: true
+overwrite_output_dir: true
+
+### train
+per_device_train_batch_size: 1
+gradient_accumulation_steps: 8
+learning_rate: 0.000005
+num_train_epochs: 1
+lr_scheduler_type: cosine
+warmup_steps: 0.1
+fp16: true
+
+### eval
+val_size: 0.1
+per_device_eval_batch_size: 1
+evaluation_strategy: steps
+eval_steps: 500
+
+use_fast_tokenizer: False
+use_dora: true
+

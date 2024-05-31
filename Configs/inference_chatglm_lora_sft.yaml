@@ -1,0 +1,4 @@
+model_name_or_path: /vepfs-sha/liying/LLM_JUDGER/Models/chatglm3-6b
+adapter_name_or_path: /vepfs-sha/liying/LLM_JUDGER/LLaMA-Factory/saves/chatglm3-6b_judge2/lora/sft/checkpoint-4500
+template: chatml
+finetuning_type: lora

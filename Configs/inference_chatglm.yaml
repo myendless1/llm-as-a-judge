@@ -1,0 +1,2 @@
+model_name_or_path: /vepfs-sha/liying/LLM_JUDGER/Models/chatglm3-6b
+template: chatml
