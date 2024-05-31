@@ -3,7 +3,7 @@
 
 ## Prepare Data
 
-1. make raw data dir by running [Data/make_raw_files_dir.sh](Data/make_raw_files_dir.sh])
+1. make raw data dir by running [Data/make_raw_files_dir.sh](Data/make_raw_files_dir.sh)
 2. Download raw files.
     Download raw/auto_judge/pairwise_traindata.jsonl at [pairwise_traindata.jsonl](https://github.com/GAIR-NLP/auto-j/blob/main/data/training/pairwise_traindata.jsonl).
 
