@@ -26,7 +26,7 @@
 
 4. combine the formatted data to openai format by running [Data/scripts/prompts/combine.py](Data/scripts/prompts/combine.py) and generate the same format test data by running [Data/scripts/prompts/combine_test.py](Data/scripts/prompts/combine_test.py).
 
-5. soft line the output openai format training file to [LLaMA-Factory/data](LLaMA-Factory/data) and add an entry in  [dataset_info.json](LLaMA-Factory/data/dataset_info.json) to fit LLaMA-Factory training pipeline, here is an example:
+5. soft link the output openai format training file to [LLaMA-Factory/data](LLaMA-Factory/data) and add an entry in  [dataset_info.json](LLaMA-Factory/data/dataset_info.json) to fit LLaMA-Factory training pipeline, here is an example:
 ```json
   "train_openai": {
     "file_name": "train_openai.json",
