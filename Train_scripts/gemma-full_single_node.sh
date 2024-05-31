@@ -13,4 +13,4 @@ CUDA_VISIBLE_DEVICES=0,1 torchrun \
     --node_rank $RANK \
     --master_addr $MASTER_ADDR \
     --master_port $MASTER_PORT \
-    src/train.py Configs/gemme-2b_full.yaml
+    LLaMA-Factory/src/train.py Configs/gemme-2b_full.yaml
