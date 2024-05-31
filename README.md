@@ -54,4 +54,4 @@ Reference our training examples in [Train scripts](Train_scripts), note that con
 
 ## Test Judge Model performance
 
-See test scripts in [Test scripts](Test_scripts) for more details, Judge Models are tested on PandaLM, LLM bar, MT bench and Auto-j test sets with respect to human preference.
+See test scripts in [Test scripts](Test_scripts/judge_commands.sh) for more details, Judge Models are tested on PandaLM, LLM bar, MT bench and Auto-j test sets with respect to human preference.
