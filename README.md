@@ -1,4 +1,5 @@
 # Train your LLM judge model using multi training dataset in a unified manner.
+![Our training results](img/results.png)
 
 ## Prepare Data
 
